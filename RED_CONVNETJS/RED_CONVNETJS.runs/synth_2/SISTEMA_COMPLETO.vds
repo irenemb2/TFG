@@ -1,0 +1,2344 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jun 16 15:17:53 2022
+# Process ID: 31688
+# Current directory: C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2
+# Command line: vivado.exe -log SISTEMA_COMPLETO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SISTEMA_COMPLETO.tcl
+# Log file: C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2/SISTEMA_COMPLETO.vds
+# Journal file: C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source SISTEMA_COMPLETO.tcl -notrace
+Command: synth_design -top SISTEMA_COMPLETO -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30724 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 845.184 ; gain = 233.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SISTEMA_COMPLETO' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:25]
+INFO: [Synth 8-3491] module 'RAM' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2/.Xil/Vivado-31688-DESKTOP-2UOKUU8/realtime/RAM_stub.vhdl:5' bound to instance 'RAM_MEMORY' of component 'RAM' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:600]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2/.Xil/Vivado-31688-DESKTOP-2UOKUU8/realtime/RAM_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'GEN1' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN1.vhd:26' bound to instance 'GEN_ENABLE' of component 'GEN1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:613]
+INFO: [Synth 8-638] synthesizing module 'GEN1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN1.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'GEN1' (1#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN1.vhd:38]
+INFO: [Synth 8-3491] module 'INTERFAZ_ET1' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET1.vhd:25' bound to instance 'INTERFAZ_1' of component 'INTERFAZ_ET1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:627]
+INFO: [Synth 8-638] synthesizing module 'INTERFAZ_ET1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'INTERFAZ_ET1' (2#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET1.vhd:42]
+INFO: [Synth 8-3491] module 'PAR2SER' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/PAR2SER.vhd:23' bound to instance 'CONVERSOR' of component 'PAR2SER' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:647]
+INFO: [Synth 8-638] synthesizing module 'PAR2SER' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/PAR2SER.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'PAR2SER' (3#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/PAR2SER.vhd:28]
+INFO: [Synth 8-3491] module 'ROM1_1' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_1.vhd:5' bound to instance 'MEMROM1_1' of component 'ROM1_1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:655]
+INFO: [Synth 8-638] synthesizing module 'ROM1_1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_1.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_1' (4#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_1.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_1' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:661]
+INFO: [Synth 8-638] synthesizing module 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'CONV' (5#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:34]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_1' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:670]
+INFO: [Synth 8-638] synthesizing module 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'RELU' (6#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:32]
+INFO: [Synth 8-3491] module 'ROM1_2' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_2.vhd:5' bound to instance 'MEMROM1_2' of component 'ROM1_2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:680]
+INFO: [Synth 8-638] synthesizing module 'ROM1_2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_2' (7#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_2.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_2' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:685]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_2' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:694]
+INFO: [Synth 8-3491] module 'ROM1_3' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_3.vhd:5' bound to instance 'MEMROM1_3' of component 'ROM1_3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:704]
+INFO: [Synth 8-638] synthesizing module 'ROM1_3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_3.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_3' (8#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_3.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_3' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:709]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_3' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:718]
+INFO: [Synth 8-3491] module 'ROM1_4' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_4.vhd:5' bound to instance 'MEMROM1_4' of component 'ROM1_4' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:728]
+INFO: [Synth 8-638] synthesizing module 'ROM1_4' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_4.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_4' (9#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_4.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_4' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:733]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_4' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:742]
+INFO: [Synth 8-3491] module 'ROM1_5' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_5.vhd:5' bound to instance 'MEMROM1_5' of component 'ROM1_5' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:752]
+INFO: [Synth 8-638] synthesizing module 'ROM1_5' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_5.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_5' (10#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_5.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_5' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:757]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_5' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:766]
+INFO: [Synth 8-3491] module 'ROM1_6' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_6.vhd:5' bound to instance 'MEMROM1_6' of component 'ROM1_6' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:776]
+INFO: [Synth 8-638] synthesizing module 'ROM1_6' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_6.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_6' (11#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_6.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_6' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:781]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_6' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:790]
+INFO: [Synth 8-3491] module 'ROM1_7' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_7.vhd:5' bound to instance 'MEMROM1_7' of component 'ROM1_7' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:800]
+INFO: [Synth 8-638] synthesizing module 'ROM1_7' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_7.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_7' (12#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_7.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_7' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:805]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_7' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:814]
+INFO: [Synth 8-3491] module 'ROM1_8' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_8.vhd:5' bound to instance 'MEMROM1_8' of component 'ROM1_8' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:824]
+INFO: [Synth 8-638] synthesizing module 'ROM1_8' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_8.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_8' (13#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_8.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_8' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:829]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_8' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:838]
+INFO: [Synth 8-3491] module 'ROM1_9' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_9.vhd:5' bound to instance 'MEMROM1_9' of component 'ROM1_9' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:848]
+INFO: [Synth 8-638] synthesizing module 'ROM1_9' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_9.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_9' (14#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_9.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_9' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:853]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_9' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:862]
+INFO: [Synth 8-3491] module 'ROM1_10' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_10.vhd:5' bound to instance 'MEMROM1_10' of component 'ROM1_10' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:872]
+INFO: [Synth 8-638] synthesizing module 'ROM1_10' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_10.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_10' (15#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_10.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_10' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:877]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_10' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:886]
+INFO: [Synth 8-3491] module 'ROM1_11' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_11.vhd:5' bound to instance 'MEMROM1_11' of component 'ROM1_11' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:896]
+INFO: [Synth 8-638] synthesizing module 'ROM1_11' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_11.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_11' (16#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_11.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_11' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:901]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_11' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:910]
+INFO: [Synth 8-3491] module 'ROM1_12' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_12.vhd:5' bound to instance 'MEMROM1_12' of component 'ROM1_12' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:920]
+INFO: [Synth 8-638] synthesizing module 'ROM1_12' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_12.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_12' (17#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_12.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_12' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:925]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_12' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:934]
+INFO: [Synth 8-3491] module 'ROM1_13' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_13.vhd:5' bound to instance 'MEMROM1_13' of component 'ROM1_13' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:944]
+INFO: [Synth 8-638] synthesizing module 'ROM1_13' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_13.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_13' (18#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_13.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_13' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:949]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_13' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:958]
+INFO: [Synth 8-3491] module 'ROM1_14' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_14.vhd:5' bound to instance 'MEMROM1_14' of component 'ROM1_14' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:968]
+INFO: [Synth 8-638] synthesizing module 'ROM1_14' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_14.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_14' (19#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_14.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_14' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:973]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_14' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:982]
+INFO: [Synth 8-3491] module 'ROM1_15' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_15.vhd:5' bound to instance 'MEMROM1_15' of component 'ROM1_15' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:992]
+INFO: [Synth 8-638] synthesizing module 'ROM1_15' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_15.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_15' (20#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_15.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_15' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:997]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_15' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1006]
+INFO: [Synth 8-3491] module 'ROM1_16' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_16.vhd:5' bound to instance 'MEMROM1_16' of component 'ROM1_16' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1016]
+INFO: [Synth 8-638] synthesizing module 'ROM1_16' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_16.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM1_16' (21#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM1_16.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV1_16' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1021]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU1_16' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1030]
+INFO: [Synth 8-3491] module 'GEN2' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN2.vhd:29' bound to instance 'GEN_ENABLE2' of component 'GEN2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1042]
+INFO: [Synth 8-638] synthesizing module 'GEN2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN2.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'GEN2' (22#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN2.vhd:45]
+INFO: [Synth 8-3491] module 'INTERFAZ_ET2' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET2.vhd:33' bound to instance 'INTERFAZ_2' of component 'INTERFAZ_ET2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1059]
+INFO: [Synth 8-638] synthesizing module 'INTERFAZ_ET2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET2.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'INTERFAZ_ET2' (23#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET2.vhd:50]
+INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/MUX.vhd:24' bound to instance 'MUX_1' of component 'MUX' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1076]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/MUX.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (24#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/MUX.vhd:45]
+INFO: [Synth 8-3491] module 'MAXPOOL' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/MAXPOOL.vhd:21' bound to instance 'POOL2' of component 'MAXPOOL' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1097]
+INFO: [Synth 8-638] synthesizing module 'MAXPOOL' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/MAXPOOL.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'MAXPOOL' (25#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/MAXPOOL.vhd:29]
+INFO: [Synth 8-3491] module 'PAR2SER' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/PAR2SER.vhd:23' bound to instance 'CONVERSOR2' of component 'PAR2SER' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1108]
+INFO: [Synth 8-3491] module 'ROM2_1' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_1.vhd:5' bound to instance 'MEMROM2_1' of component 'ROM2_1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1119]
+INFO: [Synth 8-638] synthesizing module 'ROM2_1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_1.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_1' (26#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_1.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_1' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1125]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_1' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1134]
+INFO: [Synth 8-3491] module 'ROM2_2' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_2.vhd:5' bound to instance 'MEMROM2_2' of component 'ROM2_2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1143]
+INFO: [Synth 8-638] synthesizing module 'ROM2_2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_2' (27#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_2.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_2' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1149]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_2' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1158]
+INFO: [Synth 8-3491] module 'ROM2_3' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_3.vhd:5' bound to instance 'MEMROM2_3' of component 'ROM2_3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1167]
+INFO: [Synth 8-638] synthesizing module 'ROM2_3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_3.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_3' (28#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_3.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_3' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1173]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_3' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1182]
+INFO: [Synth 8-3491] module 'ROM2_4' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_4.vhd:5' bound to instance 'MEMROM_24' of component 'ROM2_4' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1191]
+INFO: [Synth 8-638] synthesizing module 'ROM2_4' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_4.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_4' (29#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_4.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_4' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1197]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_4' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1206]
+INFO: [Synth 8-3491] module 'ROM2_5' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_5.vhd:5' bound to instance 'MEMROM2_5' of component 'ROM2_5' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1215]
+INFO: [Synth 8-638] synthesizing module 'ROM2_5' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_5.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_5' (30#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_5.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_5' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1221]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_5' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1230]
+INFO: [Synth 8-3491] module 'ROM2_6' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_6.vhd:5' bound to instance 'MEMROM_26' of component 'ROM2_6' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1239]
+INFO: [Synth 8-638] synthesizing module 'ROM2_6' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_6.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_6' (31#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_6.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_6' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1245]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_6' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1254]
+INFO: [Synth 8-3491] module 'ROM2_7' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_7.vhd:5' bound to instance 'MEMROM2_7' of component 'ROM2_7' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1263]
+INFO: [Synth 8-638] synthesizing module 'ROM2_7' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_7.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_7' (32#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_7.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_7' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1269]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_7' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1278]
+INFO: [Synth 8-3491] module 'ROM2_8' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_8.vhd:5' bound to instance 'MEMROM2_8' of component 'ROM2_8' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1287]
+INFO: [Synth 8-638] synthesizing module 'ROM2_8' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_8.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_8' (33#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_8.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_8' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1293]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_8' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1302]
+INFO: [Synth 8-3491] module 'ROM2_9' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_9.vhd:5' bound to instance 'MEMROM_29' of component 'ROM2_9' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1311]
+INFO: [Synth 8-638] synthesizing module 'ROM2_9' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_9.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_9' (34#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_9.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_9' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1317]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_9' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1326]
+INFO: [Synth 8-3491] module 'ROM2_10' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_10.vhd:5' bound to instance 'MEMROM2_10' of component 'ROM2_10' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1335]
+INFO: [Synth 8-638] synthesizing module 'ROM2_10' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_10.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_10' (35#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_10.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_10' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1341]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_10' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1350]
+INFO: [Synth 8-3491] module 'ROM2_11' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_11.vhd:5' bound to instance 'MEMROM2_11' of component 'ROM2_11' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1359]
+INFO: [Synth 8-638] synthesizing module 'ROM2_11' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_11.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_11' (36#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_11.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_11' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1365]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_11' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1374]
+INFO: [Synth 8-3491] module 'ROM2_12' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_12.vhd:5' bound to instance 'MEMROM2_12' of component 'ROM2_12' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1383]
+INFO: [Synth 8-638] synthesizing module 'ROM2_12' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_12.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_12' (37#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_12.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_12' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1389]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_12' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1398]
+INFO: [Synth 8-3491] module 'ROM2_13' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_13.vhd:5' bound to instance 'MEMROM2_13' of component 'ROM2_13' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1407]
+INFO: [Synth 8-638] synthesizing module 'ROM2_13' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_13.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_13' (38#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_13.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_13' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1413]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_13' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1422]
+INFO: [Synth 8-3491] module 'ROM2_14' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_14.vhd:5' bound to instance 'MEMROM2_14' of component 'ROM2_14' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1431]
+INFO: [Synth 8-638] synthesizing module 'ROM2_14' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_14.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_14' (39#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_14.vhd:10]
+INFO: [Synth 8-3491] module 'CONV' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/CONV.vhd:25' bound to instance 'CONV2_14' of component 'CONV' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1437]
+INFO: [Synth 8-3491] module 'RELU' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sim_1/new/RELU.vhd:22' bound to instance 'RELU2_14' of component 'RELU' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1446]
+INFO: [Synth 8-3491] module 'ROM2_15' declared at 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_15.vhd:5' bound to instance 'MEMROM2_15' of component 'ROM2_15' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:1455]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'ROM2_15' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_15.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_15' (40#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_15.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM2_16' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_16.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_16' (41#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_16.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM2_17' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_17.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_17' (42#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_17.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM2_18' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_18.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_18' (43#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_18.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM2_19' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_19.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_19' (44#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_19.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM2_20' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_20.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM2_20' (45#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM2_20.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'GEN3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN3.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'GEN3' (46#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN3.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'INTERFAZ_ET3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET3.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'INTERFAZ_ET3' (47#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/INTERFAZ_ET3.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'MUX2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/MUX2.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'MUX2' (48#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/MUX2.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'ROM3_1' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_1.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_1' (49#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_1.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_2' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_2' (50#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_2.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_3.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_3' (51#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_3.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_4' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_4.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_4' (52#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_4.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_5' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_5.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_5' (53#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_5.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_6' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_6.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_6' (54#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_6.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_7' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_7.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_7' (55#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_7.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_8' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_8.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_8' (56#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_8.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_9' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_9.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_9' (57#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_9.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_10' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_10.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_10' (58#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_10.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_11' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_11.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_11' (59#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_11.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_12' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_12.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_12' (60#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_12.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_13' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_13.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_13' (61#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_13.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_14' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_14.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_14' (62#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_14.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_15' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_15.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_15' (63#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_15.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_16' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_16.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_16' (64#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_16.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_17' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_17.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_17' (65#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_17.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_18' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_18.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_18' (66#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_18.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_19' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_19.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_19' (67#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_19.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ROM3_20' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_20.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'ROM3_20' (68#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/ROM3_20.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'GEN4' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN4.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'GEN4' (69#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/GEN4.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'MUX3' [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/MUX3.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'MUX3' (70#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/MUX3.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'SISTEMA_COMPLETO' (71#1) [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/new/SISTEMA_COMPLETO.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 967.102 ; gain = 355.766
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 967.102 ; gain = 355.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 967.102 ; gain = 355.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 967.102 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'RAM_MEMORY'
+Finished Parsing XDC File [c:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.srcs/sources_1/ip/RAM/RAM/RAM_in_context.xdc] for cell 'RAM_MEMORY'
+Parsing XDC File [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1070.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1070.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.348 ; gain = 459.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.348 ; gain = 459.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for RAM_MEMORY. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1070.348 ; gain = 459.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'GEN1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'INTERFAZ_ET1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'GEN2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'INTERFAZ_ET2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'GEN3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'INTERFAZ_ET3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'GEN4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                  espera |                              010 |                               01
+                      s0 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'GEN1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                  espera |                             0010 |                               01
+                      s0 |                             0100 |                               10
+                      s1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'INTERFAZ_ET1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                  espera |                              010 |                               01
+                      s0 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'GEN2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                  espera |                              010 |                               01
+                      s0 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'INTERFAZ_ET2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                  espera |                              010 |                               01
+                      s0 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'GEN3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                  espera |                              010 |                               01
+                      s0 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'INTERFAZ_ET3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                  espera |                               01 |                               01
+                      s0 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'GEN4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1070.348 ; gain = 459.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |SISTEMA_COMPLETO__GB0 |           1|     39511|
+|2     |SISTEMA_COMPLETO__GB1 |           1|     36394|
+|3     |SISTEMA_COMPLETO__GB2 |           1|     31980|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 56    
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 112   
+	   2 Input     18 Bit       Adders := 1     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 15    
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 59    
+	   2 Input      6 Bit       Adders := 37    
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 11    
+	   2 Input      3 Bit       Adders := 6     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               31 Bit    Registers := 56    
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 286   
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 56    
+	   4 Input     21 Bit        Muxes := 1     
+	   3 Input     21 Bit        Muxes := 1     
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 171   
+	   4 Input     19 Bit        Muxes := 56    
+	   3 Input     18 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 17    
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 233   
+	   2 Input      6 Bit        Muxes := 28    
+	   3 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 11    
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 209   
+	   3 Input      1 Bit        Muxes := 66    
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SISTEMA_COMPLETO 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+Module MAXPOOL__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module GEN4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 9     
+Module RELU__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module CONV__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module PAR2SER__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module MAXPOOL__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module RELU__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module GEN3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     21 Bit        Muxes := 1     
+	   3 Input     21 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+Module CONV__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__26 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__26 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__27 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__27 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__28 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__28 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__29 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__29 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__30 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__30 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__31 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__31 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__33 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__33 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__34 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__34 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__35 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__35 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__36 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__36 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module RELU__37 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__37 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__38 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__38 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__39 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__39 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__40 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__40 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module INTERFAZ_ET3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 8     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 12    
+Module PAR2SER__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module MAXPOOL 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module INTERFAZ_ET2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 14    
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 11    
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 12    
+Module GEN2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     20 Bit        Muxes := 1     
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 13    
+	   5 Input      1 Bit        Muxes := 1     
+Module RELU__41 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__41 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__42 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__42 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__43 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__43 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__44 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__44 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__45 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__45 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__46 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__46 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__47 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__47 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__48 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__48 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__49 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__49 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__50 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__50 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__51 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__51 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__52 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__52 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__53 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__53 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__54 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__54 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU__55 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV__55 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module RELU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   4 Input     19 Bit        Muxes := 1     
+Module CONV 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module PAR2SER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module INTERFAZ_ET1 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 15    
+	   2 Input      6 Bit       Adders := 23    
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 16    
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 17    
+	   4 Input      6 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 11    
+Module GEN1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     18 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:53 ; elapsed = 00:02:56 . Memory (MB): peak = 1124.500 ; gain = 513.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+-------------------+---------------+----------------+
+|Module Name      | RTL Object        | Depth x Width | Implemented As | 
++-----------------+-------------------+---------------+----------------+
+|ROM1_1           | weight            | 128x7         | LUT            | 
+|ROM1_2           | weight            | 128x8         | LUT            | 
+|ROM1_3           | weight            | 128x8         | LUT            | 
+|ROM1_4           | weight            | 128x8         | LUT            | 
+|ROM1_5           | weight            | 128x8         | LUT            | 
+|ROM1_6           | weight            | 128x8         | LUT            | 
+|ROM1_7           | weight            | 128x8         | LUT            | 
+|ROM1_8           | weight            | 128x8         | LUT            | 
+|ROM1_9           | weight            | 128x7         | LUT            | 
+|ROM1_10          | weight            | 128x7         | LUT            | 
+|ROM1_11          | weight            | 128x7         | LUT            | 
+|ROM1_12          | weight            | 128x7         | LUT            | 
+|ROM1_13          | weight            | 128x8         | LUT            | 
+|ROM1_14          | weight            | 128x7         | LUT            | 
+|ROM1_15          | weight            | 128x7         | LUT            | 
+|ROM1_16          | weight            | 128x7         | LUT            | 
+|ROM2_1           | weight            | 512x7         | LUT            | 
+|ROM2_2           | weight            | 512x6         | LUT            | 
+|ROM2_3           | weight            | 512x7         | LUT            | 
+|ROM2_4           | weight            | 512x7         | LUT            | 
+|ROM2_5           | weight            | 512x7         | LUT            | 
+|ROM2_6           | weight            | 512x7         | LUT            | 
+|ROM2_7           | weight            | 512x7         | LUT            | 
+|ROM2_8           | weight            | 512x7         | LUT            | 
+|ROM2_9           | weight            | 512x7         | LUT            | 
+|ROM2_10          | weight            | 512x7         | LUT            | 
+|ROM2_11          | weight            | 512x6         | LUT            | 
+|ROM2_12          | weight            | 512x7         | LUT            | 
+|ROM2_13          | weight            | 512x7         | LUT            | 
+|ROM2_14          | weight            | 512x7         | LUT            | 
+|ROM2_15          | weight            | 512x7         | LUT            | 
+|ROM2_16          | weight            | 512x7         | LUT            | 
+|ROM2_17          | weight            | 512x7         | LUT            | 
+|ROM2_18          | weight            | 512x7         | LUT            | 
+|ROM2_19          | weight            | 512x7         | LUT            | 
+|ROM2_20          | weight            | 512x7         | LUT            | 
+|ROM3_1           | weight            | 1024x6        | LUT            | 
+|ROM3_2           | weight            | 1024x7        | LUT            | 
+|ROM3_3           | weight            | 1024x7        | LUT            | 
+|ROM3_4           | weight            | 1024x7        | LUT            | 
+|ROM3_5           | weight            | 1024x7        | LUT            | 
+|ROM3_6           | weight            | 1024x7        | LUT            | 
+|ROM3_7           | weight            | 1024x7        | LUT            | 
+|ROM3_8           | weight            | 1024x6        | LUT            | 
+|ROM3_9           | weight            | 1024x6        | LUT            | 
+|ROM3_10          | weight            | 1024x6        | LUT            | 
+|ROM3_11          | weight            | 1024x6        | LUT            | 
+|ROM3_12          | weight            | 1024x7        | LUT            | 
+|ROM3_13          | weight            | 1024x7        | LUT            | 
+|ROM3_14          | weight            | 1024x6        | LUT            | 
+|ROM3_15          | weight            | 1024x6        | LUT            | 
+|ROM3_16          | weight            | 1024x6        | LUT            | 
+|ROM3_17          | weight            | 1024x7        | LUT            | 
+|ROM3_18          | weight            | 1024x7        | LUT            | 
+|ROM3_19          | weight            | 1024x7        | LUT            | 
+|ROM3_20          | weight            | 1024x7        | LUT            | 
+|ROM3_20          | weight            | 1024x7        | LUT            | 
+|ROM3_19          | weight            | 1024x7        | LUT            | 
+|ROM3_18          | weight            | 1024x7        | LUT            | 
+|ROM3_17          | weight            | 1024x7        | LUT            | 
+|ROM3_16          | weight            | 1024x6        | LUT            | 
+|ROM3_15          | weight            | 1024x6        | LUT            | 
+|ROM3_14          | weight            | 1024x6        | LUT            | 
+|ROM3_13          | weight            | 1024x7        | LUT            | 
+|ROM3_12          | weight            | 1024x7        | LUT            | 
+|ROM3_11          | weight            | 1024x6        | LUT            | 
+|ROM3_10          | weight            | 1024x6        | LUT            | 
+|ROM3_9           | weight            | 1024x6        | LUT            | 
+|ROM3_8           | weight            | 1024x6        | LUT            | 
+|ROM3_7           | weight            | 1024x7        | LUT            | 
+|ROM3_6           | weight            | 1024x7        | LUT            | 
+|ROM3_5           | weight            | 1024x7        | LUT            | 
+|ROM3_4           | weight            | 1024x7        | LUT            | 
+|ROM3_3           | weight            | 1024x7        | LUT            | 
+|ROM3_2           | weight            | 1024x7        | LUT            | 
+|ROM3_1           | weight            | 1024x6        | LUT            | 
+|ROM2_5           | weight            | 512x7         | LUT            | 
+|ROM2_6           | weight            | 512x7         | LUT            | 
+|ROM2_7           | weight            | 512x7         | LUT            | 
+|ROM2_8           | weight            | 512x7         | LUT            | 
+|ROM2_9           | weight            | 512x7         | LUT            | 
+|ROM2_10          | weight            | 512x7         | LUT            | 
+|ROM2_11          | weight            | 512x6         | LUT            | 
+|ROM2_12          | weight            | 512x7         | LUT            | 
+|ROM2_13          | weight            | 512x7         | LUT            | 
+|ROM2_14          | weight            | 512x7         | LUT            | 
+|ROM2_15          | weight            | 512x7         | LUT            | 
+|ROM2_16          | weight            | 512x7         | LUT            | 
+|ROM2_17          | weight            | 512x7         | LUT            | 
+|ROM2_18          | weight            | 512x7         | LUT            | 
+|ROM2_19          | weight            | 512x7         | LUT            | 
+|ROM2_20          | weight            | 512x7         | LUT            | 
+|ROM2_4           | weight            | 512x7         | LUT            | 
+|ROM2_3           | weight            | 512x7         | LUT            | 
+|ROM2_2           | weight            | 512x6         | LUT            | 
+|ROM2_1           | weight            | 512x7         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_16/weight | 128x7         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_15/weight | 128x7         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_14/weight | 128x7         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_13/weight | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_12/weight | 128x7         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_11/weight | 128x7         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_9/weight  | 128x7         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_8/weight  | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_7/weight  | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_6/weight  | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_5/weight  | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_4/weight  | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_3/weight  | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_2/weight  | 128x8         | LUT            | 
+|SISTEMA_COMPLETO | MEMROM1_1/weight  | 128x7         | LUT            | 
++-----------------+-------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |SISTEMA_COMPLETO__GB0 |           1|     19511|
+|2     |SISTEMA_COMPLETO__GB1 |           1|     12042|
+|3     |SISTEMA_COMPLETO__GB2 |           1|     10818|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1124.691 ; gain = 513.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:01 ; elapsed = 00:03:05 . Memory (MB): peak = 1124.691 ; gain = 513.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |SISTEMA_COMPLETO__GB0 |           1|     19511|
+|2     |SISTEMA_COMPLETO__GB1 |           1|     12042|
+|3     |SISTEMA_COMPLETO__GB2 |           1|     10818|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:10 ; elapsed = 00:03:14 . Memory (MB): peak = 1188.711 ; gain = 577.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:16 ; elapsed = 00:03:20 . Memory (MB): peak = 1189.742 ; gain = 578.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:16 ; elapsed = 00:03:20 . Memory (MB): peak = 1189.742 ; gain = 578.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:18 ; elapsed = 00:03:22 . Memory (MB): peak = 1189.742 ; gain = 578.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:18 ; elapsed = 00:03:22 . Memory (MB): peak = 1189.742 ; gain = 578.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:18 ; elapsed = 00:03:22 . Memory (MB): peak = 1189.742 ; gain = 578.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:18 ; elapsed = 00:03:22 . Memory (MB): peak = 1189.742 ; gain = 578.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |RAM           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |RAM_bbox_0 |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |  1363|
+|4     |LUT1       |   875|
+|5     |LUT2       |  1320|
+|6     |LUT3       |   749|
+|7     |LUT4       |  1152|
+|8     |LUT5       |  1192|
+|9     |LUT6       |  4898|
+|10    |MUXF7      |  1554|
+|11    |MUXF8      |   259|
+|12    |FDCE       |  4579|
+|13    |FDPE       |     6|
+|14    |FDRE       |  2900|
+|15    |IBUF       |    25|
+|16    |OBUF       |    20|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------+-------------+------+
+|      |Instance      |Module       |Cells |
++------+--------------+-------------+------+
+|1     |top           |             | 20901|
+|2     |  CONV1_1     |CONV         |    77|
+|3     |  CONV1_10    |CONV_0       |    78|
+|4     |  CONV1_11    |CONV_1       |    71|
+|5     |  CONV1_12    |CONV_2       |    79|
+|6     |  CONV1_13    |CONV_3       |    70|
+|7     |  CONV1_14    |CONV_4       |    74|
+|8     |  CONV1_15    |CONV_5       |    74|
+|9     |  CONV1_16    |CONV_6       |    75|
+|10    |  CONV1_2     |CONV_7       |    79|
+|11    |  CONV1_3     |CONV_8       |    79|
+|12    |  CONV1_4     |CONV_9       |    73|
+|13    |  CONV1_5     |CONV_10      |    76|
+|14    |  CONV1_6     |CONV_11      |    80|
+|15    |  CONV1_7     |CONV_12      |    81|
+|16    |  CONV1_8     |CONV_13      |    75|
+|17    |  CONV1_9     |CONV_14      |    76|
+|18    |  CONV2_1     |CONV_15      |    76|
+|19    |  CONV2_10    |CONV_16      |    78|
+|20    |  CONV2_11    |CONV_17      |    82|
+|21    |  CONV2_12    |CONV_18      |    77|
+|22    |  CONV2_13    |CONV_19      |    72|
+|23    |  CONV2_14    |CONV_20      |    71|
+|24    |  CONV2_15    |CONV_21      |    69|
+|25    |  CONV2_16    |CONV_22      |    78|
+|26    |  CONV2_17    |CONV_23      |    80|
+|27    |  CONV2_18    |CONV_24      |    75|
+|28    |  CONV2_19    |CONV_25      |    84|
+|29    |  CONV2_2     |CONV_26      |    68|
+|30    |  CONV2_20    |CONV_27      |    74|
+|31    |  CONV2_3     |CONV_28      |    80|
+|32    |  CONV2_4     |CONV_29      |    77|
+|33    |  CONV2_5     |CONV_30      |    72|
+|34    |  CONV2_6     |CONV_31      |    82|
+|35    |  CONV2_7     |CONV_32      |    74|
+|36    |  CONV2_8     |CONV_33      |    73|
+|37    |  CONV2_9     |CONV_34      |    83|
+|38    |  CONV3_1     |CONV_35      |    73|
+|39    |  CONV3_10    |CONV_36      |    71|
+|40    |  CONV3_11    |CONV_37      |    78|
+|41    |  CONV3_12    |CONV_38      |    76|
+|42    |  CONV3_13    |CONV_39      |    78|
+|43    |  CONV3_14    |CONV_40      |    74|
+|44    |  CONV3_15    |CONV_41      |    77|
+|45    |  CONV3_16    |CONV_42      |    74|
+|46    |  CONV3_17    |CONV_43      |    76|
+|47    |  CONV3_18    |CONV_44      |    79|
+|48    |  CONV3_19    |CONV_45      |    85|
+|49    |  CONV3_2     |CONV_46      |    75|
+|50    |  CONV3_20    |CONV_47      |    83|
+|51    |  CONV3_3     |CONV_48      |    73|
+|52    |  CONV3_4     |CONV_49      |    82|
+|53    |  CONV3_5     |CONV_50      |    82|
+|54    |  CONV3_6     |CONV_51      |    85|
+|55    |  CONV3_7     |CONV_52      |    71|
+|56    |  CONV3_8     |CONV_53      |    77|
+|57    |  CONV3_9     |CONV_54      |    75|
+|58    |  GENERADOR4  |GEN4         |    80|
+|59    |  GEN_ENABLE  |GEN1         |   743|
+|60    |  GEN_ENABLE2 |GEN2         |  2335|
+|61    |  GEN_ENABLE3 |GEN3         |  2227|
+|62    |  INTERFAZ_1  |INTERFAZ_ET1 |   438|
+|63    |  INTERFAZ_2  |INTERFAZ_ET2 |   180|
+|64    |  Interfaz3   |INTERFAZ_ET3 |   129|
+|65    |  MEMROM1_1   |ROM1_1       |     6|
+|66    |  MEMROM1_10  |ROM1_10      |     7|
+|67    |  MEMROM1_11  |ROM1_11      |     7|
+|68    |  MEMROM1_12  |ROM1_12      |     7|
+|69    |  MEMROM1_13  |ROM1_13      |     6|
+|70    |  MEMROM1_14  |ROM1_14      |     7|
+|71    |  MEMROM1_15  |ROM1_15      |     6|
+|72    |  MEMROM1_16  |ROM1_16      |     5|
+|73    |  MEMROM1_2   |ROM1_2       |     7|
+|74    |  MEMROM1_3   |ROM1_3       |     7|
+|75    |  MEMROM1_4   |ROM1_4       |     7|
+|76    |  MEMROM1_5   |ROM1_5       |     6|
+|77    |  MEMROM1_6   |ROM1_6       |     8|
+|78    |  MEMROM1_7   |ROM1_7       |     6|
+|79    |  MEMROM1_8   |ROM1_8       |     7|
+|80    |  MEMROM1_9   |ROM1_9       |     7|
+|81    |  MEMROM3_11  |ROM3_11      |   122|
+|82    |  MEMROM3_13  |ROM3_13      |   127|
+|83    |  MEMROM3_14  |ROM3_14      |   117|
+|84    |  MEMROM3_16  |ROM3_16      |   122|
+|85    |  MEMROM3_19  |ROM3_19      |   119|
+|86    |  MEMROM3_2   |ROM3_2       |   125|
+|87    |  MEMROM3_3   |ROM3_3       |   129|
+|88    |  MEMROM3_4   |ROM3_4       |   129|
+|89    |  MEMROM3_5   |ROM3_5       |   128|
+|90    |  MEMROM3_9   |ROM3_9       |   118|
+|91    |  MUX_1       |MUX          |   247|
+|92    |  MUX_2       |MUX2         |   266|
+|93    |  MUX_3       |MUX3         |   268|
+|94    |  POOL2       |MAXPOOL      |    64|
+|95    |  POOL3       |MAXPOOL_55   |    60|
+|96    |  POOL4       |MAXPOOL_56   |    38|
+|97    |  RELU1_1     |RELU         |   143|
+|98    |  RELU1_10    |RELU_57      |   143|
+|99    |  RELU1_11    |RELU_58      |   143|
+|100   |  RELU1_12    |RELU_59      |   143|
+|101   |  RELU1_13    |RELU_60      |   143|
+|102   |  RELU1_14    |RELU_61      |   143|
+|103   |  RELU1_15    |RELU_62      |   143|
+|104   |  RELU1_16    |RELU_63      |   143|
+|105   |  RELU1_2     |RELU_64      |   143|
+|106   |  RELU1_3     |RELU_65      |   143|
+|107   |  RELU1_4     |RELU_66      |   143|
+|108   |  RELU1_5     |RELU_67      |   143|
+|109   |  RELU1_6     |RELU_68      |   143|
+|110   |  RELU1_7     |RELU_69      |   143|
+|111   |  RELU1_8     |RELU_70      |   143|
+|112   |  RELU1_9     |RELU_71      |   143|
+|113   |  RELU2_1     |RELU_72      |   143|
+|114   |  RELU2_10    |RELU_73      |   143|
+|115   |  RELU2_11    |RELU_74      |   143|
+|116   |  RELU2_12    |RELU_75      |   143|
+|117   |  RELU2_13    |RELU_76      |   143|
+|118   |  RELU2_14    |RELU_77      |   143|
+|119   |  RELU2_15    |RELU_78      |   143|
+|120   |  RELU2_16    |RELU_79      |   143|
+|121   |  RELU2_17    |RELU_80      |   143|
+|122   |  RELU2_18    |RELU_81      |   143|
+|123   |  RELU2_19    |RELU_82      |   143|
+|124   |  RELU2_2     |RELU_83      |   143|
+|125   |  RELU2_20    |RELU_84      |   143|
+|126   |  RELU2_3     |RELU_85      |   143|
+|127   |  RELU2_4     |RELU_86      |   143|
+|128   |  RELU2_5     |RELU_87      |   143|
+|129   |  RELU2_6     |RELU_88      |   143|
+|130   |  RELU2_7     |RELU_89      |   143|
+|131   |  RELU2_8     |RELU_90      |   143|
+|132   |  RELU2_9     |RELU_91      |   143|
+|133   |  RELU3_1     |RELU_92      |   143|
+|134   |  RELU3_10    |RELU_93      |   143|
+|135   |  RELU3_11    |RELU_94      |   143|
+|136   |  RELU3_12    |RELU_95      |   143|
+|137   |  RELU3_13    |RELU_96      |   143|
+|138   |  RELU3_14    |RELU_97      |   143|
+|139   |  RELU3_15    |RELU_98      |   143|
+|140   |  RELU3_16    |RELU_99      |   143|
+|141   |  RELU3_17    |RELU_100     |   143|
+|142   |  RELU3_18    |RELU_101     |   143|
+|143   |  RELU3_19    |RELU_102     |   143|
+|144   |  RELU3_2     |RELU_103     |   143|
+|145   |  RELU3_20    |RELU_104     |   143|
+|146   |  RELU3_3     |RELU_105     |   143|
+|147   |  RELU3_4     |RELU_106     |   143|
+|148   |  RELU3_5     |RELU_107     |   143|
+|149   |  RELU3_6     |RELU_108     |   143|
+|150   |  RELU3_7     |RELU_109     |   143|
+|151   |  RELU3_8     |RELU_110     |   143|
+|152   |  RELU3_9     |RELU_111     |   143|
+|153   |  ROM_318     |ROM3_18      |   136|
++------+--------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:18 ; elapsed = 00:03:22 . Memory (MB): peak = 1189.742 ; gain = 578.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:03 ; elapsed = 00:03:17 . Memory (MB): peak = 1189.742 ; gain = 475.160
+Synthesis Optimization Complete : Time (s): cpu = 00:03:18 ; elapsed = 00:03:22 . Memory (MB): peak = 1189.742 ; gain = 578.406
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.364 . Memory (MB): peak = 1200.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1200.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+269 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:28 ; elapsed = 00:03:34 . Memory (MB): peak = 1200.785 ; gain = 862.816
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1200.785 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2/SISTEMA_COMPLETO.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SISTEMA_COMPLETO_utilization_synth.rpt -pb SISTEMA_COMPLETO_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 16 15:21:45 2022...

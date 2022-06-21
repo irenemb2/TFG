@@ -1,0 +1,73 @@
+function [] = GeneradorLibreria(input_size, row_size_entrada, column_size_entrada, number_of_layers, number_of_neurons, weight_size, conv_column, conv_row, stride, padding, pool_row, pool_column, pool_stride, capas)
+        name = sprintf('tfg_irene_package.vhd');
+        fid = fopen(name, 'wt');
+        fprintf(fid, 'library IEEE;\n');
+        fprintf(fid, 'use IEEE.STD_LOGIC_1164.ALL;\n');
+        fprintf(fid, 'use IEEE.NUMERIC_STD.ALL;\n');
+        fprintf(fid, 'package tfg_irene_package is\n');
+        fprintf(fid, 'function log2c (n: integer) return integer;\n');
+        fprintf(fid, '--ENTRADA\n');
+        fprintf(fid, '--matriz de entrada\n');
+        fprintf(fid, 'constant input_size: integer := %d;\n', input_size);
+        fprintf(fid, 'constant row_size_entrada: integer := %d;\n', row_size_entrada);
+        fprintf(fid, 'constant column_size_entrada: integer :=%d;\n', column_size_entrada);
+        fprintf(fid, 'constant number_of_layers1 : integer := %d;\n', number_of_layers(1));
+        fprintf(fid, 'constant number_of_inputs: integer := column_size_entrada * row_size_entrada * number_of_layers1;\n');
+        fprintf(fid, '--Neurona Conv1\n');
+        fprintf(fid, 'constant number_of_neurons1 : integer := %d;\n', number_of_neurons(1));
+        fprintf(fid, 'constant weight_size: integer := %d;\n', weight_size);
+        fprintf(fid, 'constant conv1_row: integer := %d;\n', conv_row(1));
+        fprintf(fid, 'constant conv1_column: integer := %d;\n', conv_column(1));
+        fprintf(fid, 'constant conv1_stride: integer := %d;\n', stride(1));
+        fprintf(fid, 'constant conv1_padding: integer := %d;\n', padding(1));
+        fprintf(fid, 'constant mult1 : integer := conv1_size * number_of_layers1;\n');
+        fprintf(fid, 'constant conv1_size: integer := conv1_row* conv1_column;\n');
+        fprintf(fid, 'constant row_size : integer := row_size_entrada + (2 * conv1_padding)\n');
+        fprintf(fid, 'constant column_size : integer := column_size_entrada + (2 * conv1_padding);\n');
+        fprintf(fid, 'constant numer_of_inputs_padding : integer := row_size * column_size;\n');
+        for i = 2 : capas - 1
+        fprintf(fid, '--------CAPA%d\n', i);
+        fprintf(fid, 'constant row_size%d: integer := (row_size_entrada - conv%d_row +2 * conv%d_padding)/conv%d_stride + 1;\n', i, i, i, i);
+        fprintf(fid, 'constant column_size%d: integer :=(column_size_entrada - conv%d_column +2 * conv%d_padding)/conv%d_stride + 1;\n', i, i, i, i);
+        fprintf(fid, 'constant number_of_layers%d : integer := %d;\n', i, number_of_layers(i));
+        fprintf(fid, 'constant number_of_inputs%d: integer := column_size%d * row_size%d * number_of_layers%d;\n',i, i, i, i);
+        fprintf(fid, 'constant numer_of_inputs_padding_%d : integer := (column_size%d) + 1 * (row_size%d + 1);\n', i, i, i);
+        fprintf(fid, '--Pool%d\n', i);
+        fprintf(fid, 'constant pool%d_row: integer := %d;\n',i,  pool_row(i));
+        fprintf(fid, 'constant pool%d_column: integer := %d;\n',i,  pool_column(i));
+        fprintf(fid, 'constant pool%d_stride: integer := %d;\n',i, pool_stride(i));
+        fprintf(fid, 'constant pool%d_size : integer := pool%d_column * pool%d_row;\n', i, i, i);
+        fprintf(fid, '--Neurona Conv%d\n', i);
+        fprintf(fid, 'constant conv%d_row: integer := %d;\n', i, conv_row(i));
+        fprintf(fid, 'constant conv%d_column: integer := %d;\n', i, conv_column(i));
+        fprintf(fid, 'constant conv%d_stride: integer := %d;\n', i, stride(i));
+        fprintf(fid, 'constant conv%d_padding: integer := %d;\n', i, padding(i));
+        fprintf(fid, 'constant conv%d_size: integer := conv%d_row* conv%d_column;\n', i, i, i);
+        fprintf(fid, 'constant mult%d : integer := conv%d_size;\n', i, i);
+        end
+        fprintf(fid, '---CAPA %d\n', capas);
+        fprintf(fid, '--Pool%d\n', capas);
+        fprintf(fid, 'constant number_of_layers%d: integer := %d;\n', capas, number_of_layers(capas));
+        fprintf(fid, 'constant pool%d_row: integer := %d;\n', capas, pool_row(capas- 1));
+        fprintf(fid, 'constant pool%d_column: integer := %d;\n', capas, pool_column(capas-1));
+        fprintf(fid, 'constant pool%d_stride: integer := %d;\n', capas, pool_stride(capas-1));
+        fprintf(fid, 'constant pool%d_size : integer := pool%d_column * pool%d_row;\n', i, i, i);
+
+        fprintf(fid, 'type vector_relu is array (natural range<>) of STD_LOGIC_VECTOR(input_size + weight_size + 3 - 1 downto 0);\n');
+        fprintf(fid, 'end package tfg_irene_package;\n');
+        fprintf(fid, 'package body tfg_irene_package is\n');
+        fprintf(fid, 'function log2c(n:integer) return integer is\n');
+        fprintf(fid, '	   variable m, p: integer;\n');
+        fprintf(fid, '	begin\n');
+        fprintf(fid, '	   m:=0;\n');
+        fprintf(fid, '	   p:= 1;\n');
+        fprintf(fid, '	   while p<n loop\n');
+        fprintf(fid, '	       m := m+1;\n');
+        fprintf(fid, '	       p := p*2;\n');
+        fprintf(fid, '	   end loop;\n');
+        fprintf(fid, '	   return m;\n');
+        fprintf(fid, '	end log2c;\n');
+        fprintf(fid, 'end package body;\n');
+        fclose(fid);
+end
+

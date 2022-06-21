@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sistema_completo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sistema_completo_tb" />
+            <top_module name="tfg_irene_package" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2681498333fs"></ZoomStartTime>
+      <ZoomEndTime time="2801698334fs"></ZoomEndTime>
+      <Cursor1Time time="2781665000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="173"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="105" />
+   <wvobject fp_name="/sistema_completo_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/dato_ready" type="logic">
+      <obj_property name="ElementShortName">dato_ready</obj_property>
+      <obj_property name="ObjectShortName">dato_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/dina" type="array">
+      <obj_property name="ElementShortName">dina[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/address_uart" type="array">
+      <obj_property name="ElementShortName">address_uart[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address_uart[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/T" type="other">
+      <obj_property name="ElementShortName">T</obj_property>
+      <obj_property name="ObjectShortName">T</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU1_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE/dato_in" type="logic">
+      <obj_property name="ElementShortName">dato_in</obj_property>
+      <obj_property name="ObjectShortName">dato_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE/cont_s" type="array">
+      <obj_property name="ElementShortName">cont_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cont_s[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE/mul" type="array">
+      <obj_property name="ElementShortName">mul[6:0]</obj_property>
+      <obj_property name="ObjectShortName">mul[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE/dato_out1" type="logic">
+      <obj_property name="ElementShortName">dato_out1</obj_property>
+      <obj_property name="ObjectShortName">dato_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE/dato_out2" type="logic">
+      <obj_property name="ElementShortName">dato_out2</obj_property>
+      <obj_property name="ObjectShortName">dato_out2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU1_1/c_aux" type="array">
+      <obj_property name="ElementShortName">c_aux[19:0]</obj_property>
+      <obj_property name="ObjectShortName">c_aux[19:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU1_1/dato_reg" type="array">
+      <obj_property name="ElementShortName">dato_reg[0:3][18:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_reg[0:3][18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/dato_in" type="logic">
+      <obj_property name="ElementShortName">dato_in</obj_property>
+      <obj_property name="ObjectShortName">dato_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/dato_out" type="logic">
+      <obj_property name="ElementShortName">dato_out</obj_property>
+      <obj_property name="ObjectShortName">dato_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/cero" type="logic">
+      <obj_property name="ElementShortName">cero</obj_property>
+      <obj_property name="ObjectShortName">cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/col_reg" type="array">
+      <obj_property name="ElementShortName">col_reg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">col_reg[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/row_reg" type="array">
+      <obj_property name="ElementShortName">row_reg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">row_reg[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/address" type="array">
+      <obj_property name="ElementShortName">address[11:0]</obj_property>
+      <obj_property name="ObjectShortName">address[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/conv1_col_reg" type="array">
+      <obj_property name="ElementShortName">conv1_col_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv1_col_reg[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/conv1_row_reg" type="array">
+      <obj_property name="ElementShortName">conv1_row_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv1_row_reg[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/cuenta_capa_reg" type="array">
+      <obj_property name="ElementShortName">cuenta_capa_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cuenta_capa_reg[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/pool2_col_reg" type="array">
+      <obj_property name="ElementShortName">pool2_col_reg[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pool2_col_reg[0:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_1/pool2_row_reg" type="array">
+      <obj_property name="ElementShortName">pool2_row_reg[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pool2_row_reg[0:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/conv2_col" type="array">
+      <obj_property name="ElementShortName">conv2_col[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_col[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/conv2_fila" type="array">
+      <obj_property name="ElementShortName">conv2_fila[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_fila[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONVERSOR/serial_out" type="logic">
+      <obj_property name="ElementShortName">serial_out</obj_property>
+      <obj_property name="ObjectShortName">serial_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONVERSOR/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">6</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE/next_pipeline_step" type="logic">
+      <obj_property name="ElementShortName">next_pipeline_step</obj_property>
+      <obj_property name="ObjectShortName">next_pipeline_step</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MEMROM1_1/weight" type="array">
+      <obj_property name="ElementShortName">weight[7:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">6</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONV1_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU1_1/bias_term" type="array">
+      <obj_property name="ElementShortName">bias_term[18:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_term[18:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU1_1/c_aux" type="array">
+      <obj_property name="ElementShortName">c_aux[19:0]</obj_property>
+      <obj_property name="ObjectShortName">c_aux[19:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU1_1/dato_reg" type="array">
+      <obj_property name="ElementShortName">dato_reg[0:3][18:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_reg[0:3][18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/dato_in" type="logic">
+      <obj_property name="ElementShortName">dato_in</obj_property>
+      <obj_property name="ObjectShortName">dato_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/cont_s" type="array">
+      <obj_property name="ElementShortName">cont_s[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cont_s[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/capa" type="array">
+      <obj_property name="ElementShortName">capa[3:0]</obj_property>
+      <obj_property name="ObjectShortName">capa[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/mul" type="array">
+      <obj_property name="ElementShortName">mul[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mul[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/count_reg" type="array">
+      <obj_property name="ElementShortName">count_reg[19:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[19:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/dato_out1" type="logic">
+      <obj_property name="ElementShortName">dato_out1</obj_property>
+      <obj_property name="ObjectShortName">dato_out1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/dato_out2" type="logic">
+      <obj_property name="ElementShortName">dato_out2</obj_property>
+      <obj_property name="ObjectShortName">dato_out2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/index" type="logic">
+      <obj_property name="ElementShortName">index</obj_property>
+      <obj_property name="ObjectShortName">index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/en_neurona" type="logic">
+      <obj_property name="ElementShortName">en_neurona</obj_property>
+      <obj_property name="ObjectShortName">en_neurona</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/next_dato_pool" type="logic">
+      <obj_property name="ElementShortName">next_dato_pool</obj_property>
+      <obj_property name="ObjectShortName">next_dato_pool</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/dato_in" type="logic">
+      <obj_property name="ElementShortName">dato_in</obj_property>
+      <obj_property name="ObjectShortName">dato_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/dato_out" type="logic">
+      <obj_property name="ElementShortName">dato_out</obj_property>
+      <obj_property name="ObjectShortName">dato_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/cero" type="logic">
+      <obj_property name="ElementShortName">cero</obj_property>
+      <obj_property name="ObjectShortName">cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/col_reg" type="array">
+      <obj_property name="ElementShortName">col_reg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">col_reg[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/row_reg" type="array">
+      <obj_property name="ElementShortName">row_reg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">row_reg[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/conv2_col" type="array">
+      <obj_property name="ElementShortName">conv2_col[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_col[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/conv2_fila" type="array">
+      <obj_property name="ElementShortName">conv2_fila[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv2_fila[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/pool3_col" type="array">
+      <obj_property name="ElementShortName">pool3_col[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pool3_col[0:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/pool3_fila" type="array">
+      <obj_property name="ElementShortName">pool3_fila[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pool3_fila[0:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/mul" type="array">
+      <obj_property name="ElementShortName">mul[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mul[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MUX_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/POOL2/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/POOL2/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MUX_1/index" type="array">
+      <obj_property name="ElementShortName">index[3:0]</obj_property>
+      <obj_property name="ObjectShortName">index[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MUX_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/capa" type="array">
+      <obj_property name="ElementShortName">capa[3:0]</obj_property>
+      <obj_property name="ObjectShortName">capa[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/POOL2/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONVERSOR2/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">3</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/dato_cero" type="logic">
+      <obj_property name="ElementShortName">dato_cero</obj_property>
+      <obj_property name="ObjectShortName">dato_cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/INTERFAZ_2/cero" type="logic">
+      <obj_property name="ElementShortName">cero</obj_property>
+      <obj_property name="ObjectShortName">cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONVERSOR2/serial_out" type="logic">
+      <obj_property name="ElementShortName">serial_out</obj_property>
+      <obj_property name="ObjectShortName">serial_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MEMROM2_1/bias_term" type="array">
+      <obj_property name="ElementShortName">bias_term[18:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_term[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MEMROM2_1/weight" type="array">
+      <obj_property name="ElementShortName">weight[7:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">6</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE2/next_pipeline_step" type="logic">
+      <obj_property name="ElementShortName">next_pipeline_step</obj_property>
+      <obj_property name="ObjectShortName">next_pipeline_step</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU2_1/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU2_1/bias_term" type="array">
+      <obj_property name="ElementShortName">bias_term[18:0]</obj_property>
+      <obj_property name="ObjectShortName">bias_term[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU2_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU2_1/c_aux" type="array">
+      <obj_property name="ElementShortName">c_aux[19:0]</obj_property>
+      <obj_property name="ObjectShortName">c_aux[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU2_1/dato_reg" type="array">
+      <obj_property name="ElementShortName">dato_reg[0:3][18:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_reg[0:3][18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE3/capa" type="array">
+      <obj_property name="ElementShortName">capa[4:0]</obj_property>
+      <obj_property name="ObjectShortName">capa[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE3/mul" type="array">
+      <obj_property name="ElementShortName">mul[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mul[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE3/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/dato_in" type="logic">
+      <obj_property name="ElementShortName">dato_in</obj_property>
+      <obj_property name="ObjectShortName">dato_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/dato_cero" type="logic">
+      <obj_property name="ElementShortName">dato_cero</obj_property>
+      <obj_property name="ObjectShortName">dato_cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/cero" type="logic">
+      <obj_property name="ElementShortName">cero</obj_property>
+      <obj_property name="ObjectShortName">cero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/dato_out" type="logic">
+      <obj_property name="ElementShortName">dato_out</obj_property>
+      <obj_property name="ObjectShortName">dato_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/conv3_col" type="array">
+      <obj_property name="ElementShortName">conv3_col[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv3_col[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/conv3_fila" type="array">
+      <obj_property name="ElementShortName">conv3_fila[2:0]</obj_property>
+      <obj_property name="ObjectShortName">conv3_fila[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/pool4_col" type="array">
+      <obj_property name="ElementShortName">pool4_col[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pool4_col[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/Interfaz3/pool4_fila" type="array">
+      <obj_property name="ElementShortName">pool4_fila[0:0]</obj_property>
+      <obj_property name="ObjectShortName">pool4_fila[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MUX_2/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/POOL3/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONVERSOR3/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">6</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GEN_ENABLE3/count" type="array">
+      <obj_property name="ElementShortName">count[8:0]</obj_property>
+      <obj_property name="ObjectShortName">count[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONVERSOR3/serial_out" type="logic">
+      <obj_property name="ElementShortName">serial_out</obj_property>
+      <obj_property name="ObjectShortName">serial_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/MEMROM3_1/weight" type="array">
+      <obj_property name="ElementShortName">weight[7:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">6</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/CONV3_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/RELU3_1/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GENERADOR4/dato_in" type="logic">
+      <obj_property name="ElementShortName">dato_in</obj_property>
+      <obj_property name="ObjectShortName">dato_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GENERADOR4/dato_out" type="logic">
+      <obj_property name="ElementShortName">dato_out</obj_property>
+      <obj_property name="ObjectShortName">dato_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GENERADOR4/capa" type="array">
+      <obj_property name="ElementShortName">capa[4:0]</obj_property>
+      <obj_property name="ObjectShortName">capa[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GENERADOR4/index" type="logic">
+      <obj_property name="ElementShortName">index</obj_property>
+      <obj_property name="ObjectShortName">index</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistema_completo_tb/U1/GENERADOR4/next_dato_pool" type="logic">
+      <obj_property name="ElementShortName">next_dato_pool</obj_property>
+      <obj_property name="ObjectShortName">next_dato_pool</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jun 16 15:17:53 2022
+# Process ID: 31688
+# Current directory: C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2
+# Command line: vivado.exe -log SISTEMA_COMPLETO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SISTEMA_COMPLETO.tcl
+# Log file: C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2/SISTEMA_COMPLETO.vds
+# Journal file: C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source SISTEMA_COMPLETO.tcl -notrace
