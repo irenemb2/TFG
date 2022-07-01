@@ -57,7 +57,7 @@ signal address2_reg , address2_next :  unsigned(log2c(number_of_inputs + 1) - 1 
 signal address2 : unsigned ( 11 downto 0):= (others => '0');
 signal primera_vuelta_reg, primera_vuelta_next, dato_out_reg, dato_out_next, cero_reg, cero_next : std_logic := '0';
 --CONSTANTES
-signal column_limit, row_limit : integer;
+signal column_limit, row_limit, stride1, stride2, stride3, stride4, stride5, stride6 : integer;
 begin
 --control path: state register
 process(clk, reset) 
@@ -81,10 +81,8 @@ elsif (clk'event and clk = '1') then
 end if; 
 end process;
  -- data path : routing multiplexer
- process (dato_in1,cero_reg, address_next, cuenta_capa_next, row_limit, column_limit,  address_reg, address2_reg, dato_out_reg, conv1_col_reg, conv1_row_reg,conv2_col, conv2_fila, pool2_col_reg, pool2_row_reg, conv3_col, conv3_fila, pool3_col, pool3_fila, pool4_col, pool4_fila, row_reg, col_reg, dato_in, cuenta_capa_reg, col_next, row_next, primera_vuelta_reg, state_reg)
-variable stride1, stride2, stride3, stride4, stride5, stride6 : natural;
-variable col_resta1, col_resta2, col_resta3, col_resta4, col_resta5, col_resta6 : natural;
-variable row_resta1, row_resta2, row_resta3, row_resta4, row_resta5, row_resta6 : natural;
+ process (cero_reg, stride1, stride2, stride3, stride4, stride5, stride6, address_next, cuenta_capa_next, row_limit, column_limit,  address_reg, address2_reg, dato_out_reg, conv1_col_reg, conv1_row_reg,conv2_col, conv2_fila, pool2_col_reg, pool2_row_reg, conv3_col, conv3_fila, pool3_col, pool3_fila, pool4_col, pool4_fila, row_reg, col_reg, dato_in, cuenta_capa_reg, col_next, row_next, primera_vuelta_reg, state_reg)
+
 begin
      state_next <= state_reg;
      col_next <= col_reg;
@@ -131,107 +129,89 @@ dato_out_next <= '0';
    cero_next <= '1';
    else
  if (conv1_col_reg /= conv1_column - 1) then     --si no ha terminado de recorrer las columnas del primer filtro de convolucion sumamos uno a las columnas
-     stride1 := 1;
-     col_resta1 := conv1_column-1;
-     row_resta1 := conv1_row - 1;
-     col_next <= col_reg + stride1;
+     col_next <= col_reg + 1;
      conv1_col_next <= conv1_col_reg + 1;
-     address_next <= address_reg + stride1; 
+     address_next <= address_reg + 1; 
  else
      conv1_col_next <= (others => '0');
    if (conv1_row_reg /= (conv1_row - 1)) then    --si no ha terminado de recorrer el tamaño del filtro sumamos uno a la fila y devolvemos el valor original a las columnas
-      col_next <= col_reg - col_resta1;
-      row_next <= row_reg + stride1;
+     col_next <= col_reg - (conv1_column - 1);
+      row_next <= row_reg + 1;
       conv1_row_next <= conv1_row_reg + 1;
-      address_next <= address_reg - col_resta1 + stride1*row_size;
-   else
+      address_next <= address_reg - (conv1_column - 1) + row_size;
+    else
       conv1_row_next <= (others => '0');         --repetimos para el número de capas que tenga nuestra imagen de entrada
       if(cuenta_capa_reg /= number_of_layers1 - 1) then 
-       address_next <= address_reg - (row_size * row_resta1 ) - col_resta1;
+       address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1);
        cuenta_capa_next <= cuenta_capa_reg + 1;  
-       col_next <= col_reg - col_resta1;
-       row_next<= row_reg - row_resta1;
-     else
+       col_next <= col_reg - (conv1_column - 1);
+       row_next<= row_reg - (conv1_row - 1);
+      else
         cuenta_capa_next <=(others => '0');     
         if (pool2_col_reg /= pool2_column - 1) then      --si ha terminado de recorrer el tamaño del filtro en todas las capas, avanzamos el filtro un valor = a stride, tantas veces como columnas tenga el filtro siguiente
-           row_next <= row_reg- row_resta1;
-           col_next <= col_reg- col_resta1 + stride1;
+           row_next <= row_reg- (conv1_row - 1);
+           col_next <= col_reg- (conv1_column - 1) + stride1;
            pool2_col_next <= pool2_col_reg + 1;
-           address_next <= address_reg - (row_size * row_resta1 ) - col_resta1 + stride1;
-       else
+           address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) + stride1;
+        else
        pool2_col_next <= (others => '0');
        if (pool2_row_reg /= (pool2_row - 1)) then    --si no ha terminado de recorrer el tamaño del filtro sumamos stride a las filas y devolvemos el valor original a las columnas
-         col_resta2 := col_resta1 + (stride1 * (pool2_column - 1));
-         row_next <= row_reg- row_resta1 + stride1;
-         col_next <= col_reg- col_resta1;    -- restamos las columnas del filtro actual * el stride del filtro anterior = (numero total de columnas recorridas)
+         row_next <= row_reg- (conv1_row - 1)  + stride1;
+         col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool2_column - 1));    -- restamos las columnas del filtro actual * el stride del filtro anterior = (numero total de columnas recorridas)
          pool2_row_next <= pool2_row_reg + 1;
-         address_next <= address_reg - (row_size * row_resta1 ) - col_resta2 + (row_size * stride1 );
+         address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) + (row_size * stride1 );
       else
         pool2_row_next <= (others => '0');          --REPETIMOS TANTAS VECES COMO FILTROS HAYA EN LA RED
-        row_resta2 := row_resta1 + (stride1 * (pool2_row - 1));
          if (conv2_col /= conv2_column - 1) then   
-             stride2 := stride1 * pool2_stride;
-             row_next <= row_reg - row_resta2;
-             col_next <= col_reg - col_resta2 + stride2;   
-             address_next <= address_reg - (row_size * row_resta2 ) - col_resta2 + stride2;
-         else
+            row_next <= row_reg- (conv1_row - 1)  - (stride1 * (pool2_row - 1));
+             col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool2_column - 1)) + stride2;   
+             address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) + stride2;
+          else
              if (conv2_fila /= (conv2_row - 1)) then    
-              col_resta3:= col_resta2 + (stride2 * (conv2_column-1));
-               row_next <= row_reg - row_resta2 + stride2;
-               col_next <= col_reg - col_resta2;
-                address_next <= address_reg - (row_size * row_resta2 ) - col_resta3   + (row_size*stride3);
+              row_next <= row_reg- (conv1_row - 1)  - (stride1 * (pool2_row - 1)) + stride2;
+               col_next <= col_reg- (conv1_column - 1)  - (stride1 * (pool2_column - 1)) - (stride2* (conv2_column-1));
+                address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) + (row_size*stride2);
              else 
-                row_resta3 := row_resta2 + (stride2 * (conv2_row-1));   
                 if (pool3_col /= pool3_column - 1) then  
-                    stride3 := stride2 * conv2_stride; 
-                    row_next <= row_reg- row_resta3;
-                    col_next <= col_reg - col_resta3 + stride3;
-                    address_next <=  address_reg - (row_size * row_resta3) - col_resta3 + stride3;
-                else
+                    row_next <= row_reg- (conv1_row - 1)   - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1));
+                    col_next <= col_reg - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (stride2* (conv2_column-1)) + stride3;
+                    address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) + stride3;
+                  else
                     if (pool3_fila /= (pool3_row - 1)) then    
-                         col_resta4:= col_resta3 + (stride3 * (pool3_column-1));
-                         row_next <= row_reg - row_resta3 + stride3;
-                         col_next <= col_reg - col_resta4;
-                        address_next <= address_reg - (row_size * row_resta3 ) - col_resta4  + (row_size*stride3);
+                         row_next <= row_reg - (conv1_row - 1)   - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1)) + stride3;
+                         col_next <= col_reg - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (stride2* (conv2_column-1)) - (stride3 * (pool3_column-1));
+                        address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) - (stride3 * (pool3_column-1)) + (row_size*stride3);
                    else
-                         row_resta4 := row_resta3 + (stride3 * (pool3_row - 1));
                          if (conv3_col /= conv3_column - 1) then  
-                         stride4 := stride3 * pool3_stride;
-                         row_next <= row_reg - row_resta4;
-                         col_next <= col_reg - col_resta4 + stride4;
-                         address_next <= address_reg - (row_size * row_resta4) - col_resta4  + stride4;
-                          else
+                          row_next <= row_reg- (conv1_row - 1)  - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1)) - (stride3 * (pool3_row - 1)) ;
+                         col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool2_column - 1))  - (stride2* (conv2_column-1))  - (stride3 * (pool3_column-1)) + stride4;
+                         address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) - (stride3 * (pool3_column-1) - (row_size*stride3 * (pool3_row - 1)))  + stride4;
+                           else
                          if (conv3_fila /= (conv3_row - 1)) then    
-                            col_resta5 := col_resta4 + (stride4 * (conv3_column-1));
-                            row_next <= row_reg - row_resta4 + stride4;
-                            col_next <= col_reg - col_resta5;
-                            address_next <= address_reg - (row_size * row_resta4 ) - col_resta5  + (row_size*stride4);
+                            row_next <= row_reg- (conv1_row - 1) - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1)) - (stride3 * (pool3_row - 1)) + stride4;
+                            col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool2_column - 1))  - (stride2* (conv2_column-1))  - (stride3 * (pool3_column-1))- (stride4 * (conv3_column-1)) ;
+                            address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) - (stride3 * (pool3_column-1) - (row_size*stride3 * (pool3_row - 1))) - (stride4* (conv3_column-1)) + (row_size * stride4);
                          else
-                           row_resta5 := row_resta4 +  (stride4 * (conv3_row - 1));
                            if (pool4_col /= pool4_column - 1) then  
-                           stride5 := stride4 * conv3_stride;
-                            row_next <= row_reg- row_resta5;
-                            col_next <= col_reg- col_resta5 + stride5;
-                            address_next <= address_reg - (row_size * row_resta5 ) - col_resta5 + stride5;
+                             row_next <= row_reg- (conv1_row - 1)  - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1)) - (stride3 * (pool3_row - 1)) - (stride4 * (conv3_row - 1));
+                              col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool2_column - 1))  - (stride2* (conv2_column-1))  - (stride3 * (pool3_column-1))- (stride4 * (conv3_column-1)) + stride5;
+                            address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) - (stride3 * (pool3_column-1) - (row_size*stride3 * (pool3_row - 1))) - (stride4* (conv3_column-1)) - (row_size * (stride4 * (conv3_row - 1))) + stride5;
                            else
                              if (pool4_fila /= (pool4_row - 1)) then 
-                              col_resta6 := col_resta5 + (stride5 * (pool4_row - 1));   
-                              row_next <= row_reg - row_resta5 + stride5;
-                              col_next <= col_reg - col_resta6;
-                              address_next <= address_reg - (row_size * row_resta5 ) - col_resta6  + (row_size*stride5);
-                               else
-                               row_resta6 := row_resta5 +  (stride5 * (conv3_row - 1));
+                               row_next <= row_reg- (conv1_row - 1)   - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1)) - (stride3 * (pool3_row - 1)) - (stride4 * (conv3_row - 1)) + stride5;
+                              col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool2_column - 1))  - (stride2* (conv2_column-1))  - (stride3 * (pool3_column-1))- (stride4 * (conv3_column-1)) - (stride5 * (pool4_row - 1));
+                              address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1)- (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) - (stride3 * (pool3_column-1) - (row_size*stride3 * (pool3_row - 1))) - (stride4* (conv3_column-1)) - (row_size * (stride4 * (conv3_row - 1))) - (stride5 * (pool4_column - 1)) + (row_size * stride5);
+                              else
                                 if(col_reg /= column_limit - 1) then
-                                   stride6 := stride5 * pool4_stride; 
-                                   row_next <= row_reg - row_resta6;
-                                   col_next <= col_reg- col_resta6 + stride6;
-                                   address_next <= address_reg - (row_size * row_resta6 ) - col_resta6  + stride6;
+                                  row_next <= row_reg- (conv1_row - 1)   - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1)) - (stride3 * (pool3_row - 1)) - (stride4 * (conv3_row - 1)) - (stride5 * (pool4_row-1));
+                                   col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool2_column - 1))  - (stride2* (conv2_column-1))  - (stride3 * (pool3_column-1))- (stride4 * (conv3_column-1)) - (stride5 * (pool4_column - 1)) + stride6;
+                                   address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) - (stride3 * (pool3_column-1) - (row_size*stride3 * (pool3_row - 1))) - (stride4* (conv3_column-1)) - (row_size * (stride4 * (conv3_row - 1))) - (stride5 * (pool4_column - 1)) - (row_size * stride5 * (pool4_row - 1)) + stride6;
                                 else 
-                                   row_next <= row_reg - row_resta6 + stride6;
+                                  row_next <= row_reg- (conv1_row - 1) - (stride1 * (pool2_row - 1)) - (stride2* (conv2_row-1)) - (stride3 * (pool3_row - 1)) - (stride4 * (conv3_row - 1)) - (stride5 * (pool4_column-1)) + stride6;
                                    col_next <= (others => '0');
-                                   address_next <= address_reg - (row_size * row_resta6) - col_resta6  + (row_size*stride6);
+                                   address_next <= address_reg - (row_size * (conv1_row - 1) ) - (conv1_column - 1) - (stride1 * (pool2_column - 1)) - (row_size*stride1 * (pool2_row - 1)) - (stride2* (conv2_column-1)) - (row_size*stride2* (conv2_row-1)) - (stride3 * (pool3_column-1) - (row_size*stride3 * (pool3_row - 1))) - (stride4* (conv3_column-1)) - (row_size * (stride4 * (conv3_row - 1))) - (stride5 * (pool4_column - 1)) - (row_size * stride5 * (pool4_row - 1)) - stride6 + (row_size * stride6);
                                    if(row_reg = row_limit) then
-                                      row_next <= (others => '0');
+                                     row_next <= (others => '0');
                                       address_next <=(others => '0');
                                    end if;
                                  end if;
@@ -265,7 +245,12 @@ end process;
  -- constantes
 column_limit<= column_size + 2*(conv1_padding);    --tenemos en cuenta el padding para los valores limites de columnas y filas
 row_limit<= row_size  + 2*(conv1_padding);
-
+stride1 <= conv1_stride;
+stride2 <= stride1 * pool2_stride;
+stride3 <= stride2 * conv2_stride;
+stride4 <= stride3 * pool3_stride;
+stride5 <= stride4 * conv3_stride;
+stride6 <= stride5 * pool3_stride;
  -- señales de salida
 address <= std_logic_vector(address2_reg);
 dato_out <= dato_out_reg;

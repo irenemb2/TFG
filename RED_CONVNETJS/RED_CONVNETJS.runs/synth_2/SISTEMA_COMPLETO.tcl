@@ -17,11 +17,11 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/irene/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-8688-DESKTOP-2UOKUU8/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param chipscope.maxJobs 2
+set_param synth.incrementalSynthesisCache C:/Users/irene/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20920-DESKTOP-2UOKUU8/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
-create_project -in_memory -part xc7k70tfbv676-1
+create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -32,6 +32,7 @@ set_property parent.project_path C:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CO
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_output_repo c:/Users/irene/Desktop/TFG/RED_CONVNETJS/RED_CONVNETJS.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
@@ -119,12 +120,15 @@ set_property used_in_implementation false [get_files -all c:/Users/irene/Desktop
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/irene/Downloads/Nexys4DDR_Master_TFG.xdc
+set_property used_in_implementation false [get_files C:/Users/irene/Downloads/Nexys4DDR_Master_TFG.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top SISTEMA_COMPLETO -part xc7k70tfbv676-1
+synth_design -top SISTEMA_COMPLETO -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints

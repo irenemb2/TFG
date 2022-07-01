@@ -56,6 +56,7 @@ signal pool4_row_reg, pool4_row_next : unsigned(log2c(pool4_row) - 1 downto 0) :
 --CONSTANTES
 signal column_limit, row_limit, stride1, stride2, stride3, stride4, stride5, stride6 : integer;
 signal primera_vuelta_reg, primera_vuelta_next, cero_reg, cero_next : std_logic;
+
 begin
 --control path: state register
 process(clk, reset) 
@@ -73,13 +74,12 @@ elsif (clk'event and clk = '1') then
      primera_vuelta_reg <= primera_vuelta_next;
      cero_reg <= cero_next;
 
+
 end if; 
 end process;
  -- data path : routing multiplexer
- process ( cero_reg, primera_vuelta_reg, state_reg, row_limit, column_limit,conv3_col_reg, conv3_row_reg, pool4_col_reg, pool4_row_reg, row_reg, col_reg, dato_in, col_next, row_next)
-variable stride, stride1 : integer;
-variable col_resta, col_resta1 : integer;
-variable row_resta, row_resta1 : integer;
+ process (cero_reg, stride1, stride2, primera_vuelta_reg, state_reg, row_limit, column_limit,conv3_col_reg, conv3_row_reg, pool4_col_reg, pool4_row_reg, row_reg, col_reg, dato_in, col_next, row_next)
+
  begin
      state_next <= state_reg;
      col_next <= col_reg;
@@ -90,6 +90,7 @@ variable row_resta, row_resta1 : integer;
      pool4_row_next <= pool4_row_reg;
      primera_vuelta_next <= primera_vuelta_reg;
      cero_next <= cero_reg;
+
  case state_reg is 
  when idle =>           
    dato_out <= '0';    
@@ -117,44 +118,38 @@ if(primera_vuelta_reg = '1' ) then
         state_next <= espera;
         primera_vuelta_next <= '0';
         dato_out <= '0';
-        else
+         else
         if (conv3_col_reg /= conv3_column - 1) then     --si no ha terminado de recorrer el tamaño del filtro sumamos uno a las columnas
-             stride := conv3_stride;
-             col_resta := conv3_column - 1;
-             row_resta := conv3_row - 1;
-             col_next <= col_reg + stride;
-             conv3_col_next <= conv3_col_reg + 1;
-        else
+                          col_next <= col_reg + 1;
+                          conv3_col_next <= conv3_col_reg + 1;
+       else
              conv3_col_next <= (others => '0');
              if (conv3_row_reg /= (conv3_row - 1)) then       --si no ha terminado de recorrer el tamaño del filtro sumamos uno a la fila y devolvemos el valor original a las columnas
-                  col_next <= col_reg - col_resta;
-                  row_next <= row_reg + stride;
-                  conv3_row_next <= conv3_row_reg + 1;
-             else
+                          col_next <= col_reg - (conv3_column - 1);
+                           row_next <= row_reg + 1;
+                           conv3_row_next <= conv3_row_reg + 1;
+              else
                   conv3_row_next <= (others => '0');  
                   if (pool4_col_reg /= pool4_column - 1) then       --devolvemos los valores originales a las columnas y las filas y le sumamos el stride
-                      row_next <= row_reg- row_resta;     
-                      col_next <= col_reg - col_resta + stride;
-                      pool4_col_next <= pool4_col_reg + 1;
-                  else
+                            row_next <= row_reg- (conv1_row - 1);
+                            col_next <= col_reg- (conv1_column - 1) + stride1;
+                            pool4_col_next <= pool4_col_reg + 1;
+                 else
                       pool4_col_next <= (others => '0');
-                      col_resta1 := col_resta + (stride * (pool4_row - 1));
                       if (pool4_row_reg /= (pool4_row - 1)) then      -- restamos las columnas del filtro actual * el stride del filtro anterior = (numero total de columnas recorridas)
-                          row_next <= row_reg- row_resta  + stride;
-                          col_next <= col_reg- col_resta1;    
-                          pool4_row_next <= pool4_row_reg + 1;
-                      else
+                             row_next <= row_reg- (conv3_row - 1)  + stride1;
+                              col_next <= col_reg- (conv3_column - 1) - (stride1 * (pool4_column - 1));    -- restamos las columnas del filtro actual * el stride del filtro anterior = (numero total de columnas recorridas)
+                              pool4_row_next <= pool4_row_reg + 1;
+                       else
                          pool4_row_next <= (others => '0'); 
                          --REPETIMOS TANTAS VECES COMO FILTROS HAYA EN LA RED (A PARTIR DEL FILTRO DE ESTA ETAPA)
-                         row_resta1 := row_resta + (stride * (pool4_row - 1));
-                         stride1 := stride * pool4_stride;
                          if(col_reg /= column_limit - 1) then
-                           row_next <= row_reg - row_resta1;
-                           col_next <= col_reg - col_resta1 + stride1;   
-                        else 
-                            row_next <= row_reg - row_resta1 + stride1;
-                            col_next <= (others => '0');
-                            if(row_reg = row_limit - 1) then
+                                    row_next <= row_reg- (conv1_row - 1)  - (stride1 * (pool4_row - 1));
+                                  col_next <= col_reg- (conv1_column - 1) - (stride1 * (pool4_column - 1)) + stride2;   
+                      else 
+                                    row_next <= row_reg- (conv1_row - 1)  - (stride1 * (pool2_row - 1)) + stride2;
+                                   col_next <= (others => '0');
+                           if(row_reg = row_limit - 1) then
                                row_next <= (others => '0');
                             end if;
                        end if;
@@ -181,8 +176,10 @@ end process;
  -- constantes
 column_limit<= column_size3 + 2*(conv3_padding);    --tenemos en cuenta el padding para los valores limites de columnas y filas
 row_limit<= row_size3  + 2*(conv3_padding);
---stride1 <= conv3_stride;
---stride2 <= stride1 * pool4_stride;
+
+stride1 <= conv3_stride;
+stride2 <= stride1 * pool4_stride;
+
 
 
  -- señales de salida

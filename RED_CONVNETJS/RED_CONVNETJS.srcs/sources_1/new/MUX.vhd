@@ -22,7 +22,7 @@ use work.tfg_irene_package.all;
 --use UNISIM.VComponents.all;
 
 entity MUX is
-    Port ( data_in0 : in STD_LOGIC_VECTOR(input_size + weight_size + 3 -1  downto 0);
+    Port ( data_in0 : in STD_LOGIC_VECTOR(input_size + weight_size + 3-1  downto 0);
            data_in1 : in STD_LOGIC_VECTOR(input_size + weight_size + 3 -1  downto 0);
            data_in2 : in STD_LOGIC_VECTOR(input_size + weight_size + 3 -1  downto 0);
            data_in3 : in STD_LOGIC_VECTOR(input_size + weight_size + 3 -1  downto 0);

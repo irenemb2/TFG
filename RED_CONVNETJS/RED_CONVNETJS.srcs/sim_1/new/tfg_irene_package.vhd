@@ -26,7 +26,6 @@ constant row_size : integer := row_size_entrada + (2 * conv1_padding);
 constant column_size : integer := column_size_entrada + (2 * conv1_padding);
 constant numer_of_inputs_padding : integer := row_size * column_size;
 
-
 --SEGUNDA CAPA
 
 constant row_size2: integer := (row_size_entrada - conv1_row +2 * conv1_padding)/conv1_stride + 1;

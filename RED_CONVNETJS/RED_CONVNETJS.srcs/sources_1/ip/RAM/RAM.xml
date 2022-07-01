@@ -1457,11 +1457,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:19 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:17 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4d0831ee</spirit:value>
+            <spirit:value>9:4dc8797a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1477,11 +1477,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:21 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4d0831ee</spirit:value>
+            <spirit:value>9:4dc8797a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1492,7 +1492,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4d0831ee</spirit:value>
+            <spirit:value>9:4dc8797a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1508,11 +1508,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:21 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4d0831ee</spirit:value>
+            <spirit:value>9:4dc8797a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1527,11 +1527,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:21 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:15d40a14</spirit:value>
+            <spirit:value>9:72689b57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1547,11 +1547,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:21 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:15d40a14</spirit:value>
+            <spirit:value>9:72689b57</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1565,11 +1565,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:21 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4d0831ee</spirit:value>
+            <spirit:value>9:4dc8797a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1583,11 +1583,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:21 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4d0831ee</spirit:value>
+            <spirit:value>9:4dc8797a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1601,11 +1601,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jun 14 12:45:21 UTC 2022</spirit:value>
+            <spirit:value>Wed Jun 22 00:36:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4d0831ee</spirit:value>
+            <spirit:value>9:4dc8797a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3109,11 +3109,11 @@
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="STRING">
         <spirit:name>C_FAMILY</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FAMILY">kintex7</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_FAMILY">artix7</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="STRING">
         <spirit:name>C_XDEVICEFAMILY</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_XDEVICEFAMILY">kintex7</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_XDEVICEFAMILY">artix7</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="STRING">
         <spirit:name>C_ELABORATION_DIR</spirit:name>

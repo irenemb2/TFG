@@ -27,10 +27,8 @@ entity SISTEMA_COMPLETO is
           wea : IN STD_LOGIC;
           ena : IN STD_LOGIC;
           dina : IN STD_LOGIC_VECTOR(input_size - 1 DOWNTO 0);
-          address_uart : in STD_LOGIC_VECTOR(log2c(number_of_inputs + 1) - 1  downto 0);
           start : in std_logic;
-          dato_ready : out std_logic;
-          data_out : out STD_LOGIC_VECTOR(input_size + weight_size + 3 -1  downto 0));
+          dato_ready : out std_logic);
 end SISTEMA_COMPLETO;
 
 architecture Behavioral of SISTEMA_COMPLETO is
@@ -217,7 +215,6 @@ Port (clk : in STD_LOGIC;
       dato_out : out std_logic;
       dato_cero : out std_logic;
       cero : out std_logic;
-      padding : out std_logic;
       conv2_col : out unsigned(log2c(conv2_column) - 1 downto 0);
       conv2_fila : out  unsigned(log2c(conv2_row) - 1 downto 0);
       pool3_col : out unsigned(log2c(pool3_column) - 1 downto 0);
@@ -541,6 +538,8 @@ Port (clk : in STD_LOGIC;
       next_dato_pool : out std_logic);
 end component;
 ----------------SEÑALES AUXILIARES-------------------
+signal data_out : STD_LOGIC_VECTOR(input_size + weight_size + 3 -1  downto 0);
+signal address_uart : STD_LOGIC_VECTOR(log2c(number_of_inputs + 1) - 1  downto 0);
 --MEMORIA DE ENTRADA
 
 signal address_ram : std_logic_vector(11 downto 0);
@@ -1072,7 +1071,6 @@ INTERFAZ_2 : INTERFAZ_ET2
     port map(
     clk => clk,
     reset=> rst,
-    padding => padding_aux,
     dato_in => dato_in_2,
     dato_cero =>dato_cero2,
     cero => cero2,
